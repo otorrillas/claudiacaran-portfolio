@@ -77,11 +77,11 @@ export async function getStaticProps(context) {
 }
 
 export async function getStaticPaths() {
-  const paths = Object.keys(data).map(name => `/project/${name}`)
+  const paths = Object.keys(data).map(pid => ({ params: { pid }}))
 
   return {
     paths,
-    fallback: true,
+    fallback: false,
   }
 }
 
