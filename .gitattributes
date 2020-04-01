@@ -1,0 +1,7 @@
+public/Home.svg filter=lfs diff=lfs merge=lfs -text
+public/Projects filter=lfs diff=lfs merge=lfs -text
+public/Typography filter=lfs diff=lfs merge=lfs -text
+public/favicon.ico filter=lfs diff=lfs merge=lfs -text
+public/zeit.svg filter=lfs diff=lfs merge=lfs -text
+public/Arrow.svg filter=lfs diff=lfs merge=lfs -text
+public/Claudia-Aran-Studio.jpg filter=lfs diff=lfs merge=lfs -text

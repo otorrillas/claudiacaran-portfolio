@@ -1,0 +1,170 @@
+[
+  {
+    "id": "layouts",
+    "title": "Typeform Layouts",
+    "client": "typeform",
+    "year": "2020",
+    "categories": ["art_direction", "web"],
+    "tags": ["art direction", "web design"],
+    "background": {
+      "thumbnail": "/Projects/Layouts/ClaudiaAran-typeform-layouts-web-thumbnail.jpg",
+      "hover": "#2F3D35"
+    }
+  },
+  {
+    "id": "botikarium",
+    "title": "Botikarium",
+    "client": "botikarium",
+    "year": "2019",
+    "categories": ["art_direction", "brand_identity", "web"],
+    "tags": ["art direction", "brand identity", "web design"],
+    "background": {
+      "thumbnail": "/Projects/Botikarium/ClaudiaAran-Botikarium-07.jpg",
+      "hover": "#F1F0EC"
+    }
+  },
+  {
+    "id": "vintageformentera",
+    "title": "Vintage Formentera",
+    "client": "roberta de martino",
+    "year": "2019",
+    "categories": ["art_direction", "brand_identity", "web"],
+    "tags": ["art direction", "brand identity", "web design"],
+    "background": {
+      "thumbnail": "/Projects/VintageFormentera/ClaudiaAran-VintageFormentera-identity.jpg",
+      "hover": "#F1F0EC"
+    }
+  },
+  {
+    "id": "la_farandula",
+    "title": "La Farandula Identity",
+    "client": "La Farandula",
+    "year": "2019",
+    "categories": ["branding"],
+    "tags": ["logo", "social media"],
+    "background": {
+      "thumbnail": "https://unsplash.com/photos/xvPXJy2su0g",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "color_wheel",
+    "title": "Color Wheel Tool",
+    "client": "Typeform",
+    "year": "2019",
+    "categories": ["digital"],
+    "tags": ["art direction", "digital design"],
+    "background": {
+      "thumbnail": "",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "numbers-illustrations",
+    "title": "Numbers",
+    "client": "Typeform",
+    "year": "2018",
+    "categories": ["graphic_design"],
+    "tags": ["illustration", "print"],
+    "background": {
+      "thumbnail": "/Projects/Numbers/ClaudiaAran-numbers-print.jpg",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "80plus",
+    "title": "80 Plus",
+    "client": "Slow Art Works",
+    "year": "2016",
+    "categories": ["print"],
+    "tags": ["poster", "set design"],
+    "background": {
+      "thumbnail": "/Projects/80Plus/ClaudiaAran-80plus-print.jpg",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "croco",
+    "title": "Crocó Barcelona",
+    "client": "Crocó Barcelona Jewellery",
+    "year": "2018",
+    "categories": ["set design", "art direction"],
+    "tags": ["branding", "art direction", "set design"],
+    "background": {
+      "thumbnail": "/Projects/Croco/ClaudiaAran-croco-identity.jpg",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "times-ad",
+    "title": "The Times Ad",
+    "client": "Typeform",
+    "year": "",
+    "categories": ["print", "art direction"],
+    "tags": ["set design", "photography"],
+    "background": {
+      "thumbnail": "",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "paradiso",
+    "title": "Paradiso Menu",
+    "client": "Paradiso Cocktail Bar",
+    "year": "2018",
+    "categories": ["editorial"],
+    "tags": ["menu", "graphic design"],
+    "background": {
+      "thumbnail": "/Projects/Paradiso/ClaudiaAran-paradiso-editorial.jpg",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "uparkinson",
+    "title": "UParkinson Series",
+    "client": "UParkinson Teknon",
+    "year": "2018",
+    "categories": ["print", "art direction"],
+    "tags": ["illustration", "art direction"],
+    "background": {
+      "thumbnail": "/Projects/UParkinson/ClaudiaAran-uparkinson-print.jpg",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "yoga-xuanlan",
+    "title": "Yoga for XuanLan & Oysho",
+    "client": "XuanLan & Oysho",
+    "year": "2018",
+    "categories": ["print"],
+    "tags": ["illustration", "graphic design"],
+    "background": {
+      "thumbnail": "",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "art-catalogue",
+    "title": "Art Catalogue",
+    "client": "University Project",
+    "year": "",
+    "categories": ["editorial"],
+    "tags": ["editorial", "graphic design"],
+    "background": {
+      "thumbnail": "",
+      "hover": "grey"
+    }
+  },
+  {
+    "id": "moer-magazine",
+    "title": "Moer Digital Magazine",
+    "client": "University Project",
+    "year": "",
+    "categories": ["editorial"],
+    "tags": ["editorial", "graphic design", "UI"],
+    "background": {
+      "thumbnail": "",
+      "hover": "grey"
+    }
+  }
+]

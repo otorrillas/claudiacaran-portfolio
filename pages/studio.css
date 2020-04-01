@@ -1,0 +1,58 @@
+.Gallery {
+  max-width: 1600px;
+}
+
+.Tags-button {
+  font-family: ContaxSansW01-75Bold;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #a7a9ab;
+}
+
+button {
+  -webkit-appearance: button;
+  writing-mode: horizontal-tb !important;
+  text-rendering: auto;
+  /* color: buttontext; */
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+  cursor: default;
+  box-sizing: border-box;
+  margin: 0em;
+  font: 400 11px system-ui;
+  padding: 0 16px 20px 0;
+  border-width: 0px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Gallery-Project-hover-section {
+  margin: 28px;
+}
+
+.Gallery-Project-hover-section h3 {
+  font-family: ContaxSansW01-75Bold;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.Gallery-Project-hover-section p {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  margin: 0px;
+}

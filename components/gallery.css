@@ -1,0 +1,13 @@
+.Gallery {
+  display: grid;
+  grid-gap: 32px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(292px, 1fr)
+  ); /* [2] Make columns adjust according to the available viewport */
+  grid-auto-rows: 240px; /* [3] Set the height for implicitly-created row track */
+}
+
+.Gallery-Project-hover-section {
+  margin: 10px;
+}

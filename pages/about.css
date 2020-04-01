@@ -1,0 +1,123 @@
+@media only screen and (min-width: 960px) {
+  .About {
+    max-width: 1040px;
+    float: center;
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-column-gap: 32px;
+    grid-template-areas:
+      "portrait portrait portrait portrait . description description description description description description . "
+      "col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3";
+  }
+  .portrait {
+    grid-area: portrait;
+    width: 100%;
+    margin-bottom: 112px;
+  }
+
+  .description {
+    grid-area: description;
+  }
+
+  .col1 {
+    grid-area: col1;
+  }
+
+  .col2 {
+    grid-area: col2;
+  }
+
+  .col3 {
+    grid-area: col3;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .About {
+    max-width: 1040px;
+    float: center;
+    display: grid;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    grid-column-gap: 32px;
+    grid-template-areas:
+      "portrait portrait portrait portrait . description description description description description description . "
+      "col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3";
+  }
+}
+
+.about-text-list p {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a7a9ab;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.About p {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a7a9ab;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0.5em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.About a:visited {
+  color: #a7a9ab;
+}
+
+.About a {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 24px;
+  color: #a7a9ab;
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
+}
+
+h3 {
+  font-family: ContaxSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 24px;
+  color: #494949;
+  text-align: left;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.About h2 {
+  grid-area: description;
+  font-family: "freight-text-pro", serif;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 32px;
+  color: #494949;
+  text-align: left;
+  font-weight: 400;
+  margin-top: 0px;
+}

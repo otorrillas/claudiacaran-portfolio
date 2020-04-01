@@ -1,0 +1,113 @@
+@font-face {
+  font-family: "Graphik";
+  src: url("/Typography/Graphik-Regular-Web.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ContaxSans";
+  src: url("/Typography/ContaxSans75Bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ContaxSans";
+  src: url("/Typography/ContaxSans55Reg-webfont.woff2") format("woff");
+}
+
+body {
+  margin: 0;
+  background-color: white;
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  height: 100%;
+  width: 100%;
+}
+
+p {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #181818;
+  text-align: left;
+}
+
+h3 {
+  font-family: ContaxSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  color: #494949;
+  text-align: left;
+}
+
+h4 {
+  font-family: ContaxSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+  color: #333333;
+}
+
+h4 .a {
+  font-family: ContaxSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0px;
+  color: #333333;
+}
+
+a {
+  font-family: ContaxSans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 13px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #181818;
+}
+
+a:visited {
+  color: #181818;
+}
+
+.about-text {
+  font-family: Graphik;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #a7a9ab;
+  text-align: left;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: left;
+  margin: auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  min-height: 100vh;
+  max-width: 1600px;
+}
