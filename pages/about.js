@@ -1,6 +1,6 @@
 import React from "react";
 
-import Header from '../components/header'
+import Header from "../components/header";
 import Description from "../components/description";
 import Portrait from "../components/portrait";
 import Section from "../components/sections/section";
@@ -18,24 +18,24 @@ function About() {
 
   return (
     <>
-    <Header />
-    <div className="About">
-      <Portrait />
-      <Description />
-      <div className="col1">
-        <Section title="Contact">studio@claudiacaran.com</Section>
-        <SocialSection />
-        <CopyrightSection />
+      <Header />
+      <div className="About">
+        <Portrait />
+        <Description />
+        <div className="col1">
+          <Section title="Contact">studio@claudiacaran.com</Section>
+          <SocialSection />
+          <CopyrightSection />
+        </div>
+        <div className="col2">
+          <Biography />
+        </div>
+        <div className="col3">
+          <ServicesSection />
+          <Awards />
+          <Clients />
+        </div>
       </div>
-      <div className="col2">
-        <Biography />
-      </div>
-      <div className="col3">
-        <ServicesSection />
-        <Awards />
-        <Clients />
-      </div>
-    </div>
     </>
   );
 }
