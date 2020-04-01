@@ -1,5 +1,5 @@
 {
-  "name": "next-app",
+  "name": "claudiacaran-portfolio",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,7 +8,6 @@
     "start": "next start"
   },
   "dependencies": {
-    "@zeit/next-css": "^1.0.1",
     "framer-motion": "^1.10.3",
     "next": "9.3.4",
     "react": "16.13.1",
@@ -16,6 +15,7 @@
     "styled-components": "^5.0.1"
   },
   "devDependencies": {
-    "@svgr/webpack": "^5.3.0"
+    "@svgr/webpack": "^5.3.0",
+    "@zeit/next-css": "^1.0.1"
   }
 }
