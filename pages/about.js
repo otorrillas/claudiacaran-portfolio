@@ -11,16 +11,20 @@ import Biography from "../components/sections/section-biography";
 import Awards from "../components/sections/section-awards";
 import Clients from "../components/sections/section-clients";
 import CopyrightSection from "../components/sections/section-copyright";
-import "./about.css";
 import useBackgroundColor from "../lib/useBackgroundColor";
 
+import "./about.css";
+
+const backgroundColor = "#F4F1EF"
+
 function About() {
-  useBackgroundColor("#F4F1EF");
+  useBackgroundColor(backgroundColor);
 
   return (
     <>
       <Head>
         <title>{`Claudia Aran | About`}</title>
+        <meta name="theme-color" content={backgroundColor} />
       </Head>
       <Header />
       <div className="About">

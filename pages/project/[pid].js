@@ -36,6 +36,7 @@ const Project = ({ pid }) => {
     <>
       <Head>
         <title>{`Claudia Aran | ${title}`}</title>
+        <meta name="theme-color" content={styles.background} />
       </Head>
       <ProjectWrapper className="Project" color={styles.color}>
         <ProjectHeader hero={hero} title={title} />
