@@ -1,10 +1,10 @@
 import React from "react";
-import Router from 'next/router'
+import Router from "next/router";
 import {
   motion,
   useViewportScroll,
   useSpring,
-  useTransform
+  useTransform,
 } from "framer-motion";
 
 import ArrowLogo from "../public/Arrow.svg";
@@ -12,22 +12,21 @@ import HomeLogo from "../public/Home.svg";
 
 import "./nav-buttons.css";
 
-function scrollToTop () {
+function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth"
+    behavior: "smooth",
   });
 }
 
 function NavButtons() {
   const { scrollYProgress } = useViewportScroll();
   const opacity = useSpring(
-    useTransform(scrollYProgress, progress => (progress > 0.1 ? 1 : 0))
+    useTransform(scrollYProgress, (progress) => (progress > 0.1 ? 1 : 0))
   );
 
-
   function onTopClick() {
-   scrollToTop()
+    scrollToTop();
   }
 
   function onHomeClick() {
@@ -36,7 +35,7 @@ function NavButtons() {
   return (
     <motion.div
       style={{
-        opacity
+        opacity,
       }}
     >
       <motion.button

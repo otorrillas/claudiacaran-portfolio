@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 
 import Header from "../components/header";
 import Description from "../components/description";
@@ -18,6 +19,9 @@ function About() {
 
   return (
     <>
+      <Head>
+        <title>{`Claudia Aran | About`}</title>
+      </Head>
       <Header />
       <div className="About">
         <Portrait />

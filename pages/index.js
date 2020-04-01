@@ -1,3 +1,3 @@
-import Studio from './studio'
+import Studio from "./studio";
 
-export default Studio
+export default Studio;

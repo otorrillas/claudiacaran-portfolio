@@ -1,49 +1,53 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import Router from "next/router"
+import React, { useState } from "react";
+import styled from "styled-components";
+import Head from "next/head";
+import Router from "next/router";
 
-import categories from "../data/categories.json"
-import projects from "../data/project_list.json"
-import Gallery from "../components/gallery"
+import categories from "../data/categories.json";
+import projects from "../data/project_list.json";
+import Gallery from "../components/gallery";
 
-import "./studio.css"
-import Header from "../components/header"
+import "./studio.css";
+import Header from "../components/header";
 
 const CategoryButton = styled.button`
-  color: ${props => props.active && "#494949"};
-`
+  color: ${(props) => props.active && "#494949"};
+`;
 
 function Studio() {
-  const [selectedTag, setSelectedTag] = useState("")
+  const [selectedTag, setSelectedTag] = useState("");
 
   function handleTagClick(id) {
-    setSelectedTag(id)
+    setSelectedTag(id);
   }
 
   function handleAllClick() {
-    setSelectedTag("")
+    setSelectedTag("");
   }
 
   function handleProjectClick(id) {
-    Router.push(`/project/${id}`)
+    Router.push(`/project/${id}`);
   }
 
   return (
     <>
+      <Head>
+        <title>{`Claudia Aran | Studio`}</title>
+      </Head>
       <Header />
-      <div className='Studio'>
-        <div className='Tags'>
+      <div className="Studio">
+        <div className="Tags">
           <CategoryButton
-            className='Tags-button'
+            className="Tags-button"
             onClick={handleAllClick}
             active={selectedTag === ""}
           >
             all
           </CategoryButton>
-          {categories.map(category => (
+          {categories.map((category) => (
             <CategoryButton
               key={category.id}
-              className='Tags-button'
+              className="Tags-button"
               onClick={() => handleTagClick(category.id)}
               active={category.id === selectedTag}
             >
@@ -59,7 +63,7 @@ function Studio() {
         />
       </div>
     </>
-  )
+  );
 }
 
-export default Studio
+export default Studio;

@@ -5,5 +5,5 @@ import layouts from "./layouts";
 export default {
   botikarium,
   la_farandula,
-  layouts
+  layouts,
 };

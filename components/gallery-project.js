@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const GalleryCard = styled(motion.div)`
-  background: url(${props => props.background});
+  background: url(${(props) => props.background});
   background-size: cover;
   background-repeat: no-repeat;
 
@@ -12,7 +12,7 @@ const GalleryCard = styled(motion.div)`
   }
 
   &:hover {
-    background: ${props => props.hoverColor} !important;
+    background: ${(props) => props.hoverColor} !important;
 
     .Gallery-Project-hover-section {
       display: block;
@@ -27,9 +27,9 @@ const thumbnailVariants = {
   exit: {
     scale: 0.5,
     opacity: 0,
-    transition: { duration: 1.5, ...transition }
+    transition: { duration: 1.5, ...transition },
   },
-  hover: { scale: 0.97 }
+  hover: { scale: 0.97 },
 };
 
 function GalleryProject({ onClick, project }) {
@@ -39,7 +39,7 @@ function GalleryProject({ onClick, project }) {
     client,
     year,
     tags,
-    background: { thumbnail }
+    background: { thumbnail },
   } = project;
 
   function handleClick() {

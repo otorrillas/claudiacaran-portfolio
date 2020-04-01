@@ -1,11 +1,11 @@
-import React from "react"
+import React from "react";
 
-import Section from "./section"
+import Section from "./section";
 
 function Clients() {
   return (
-    <Section title='Selected Clients & Collabs.'>
-      <p className='about-text-list'>
+    <Section title="Selected Clients & Collabs.">
+      <p className="about-text-list">
         <p>Art Studio Barcelona</p>
         <p>Botikarium</p>
         <p>Crocó Barcelona</p>
@@ -20,7 +20,7 @@ function Clients() {
         <p>80Plus Coffee</p>
       </p>
     </Section>
-  )
+  );
 }
 
-export default Clients
+export default Clients;

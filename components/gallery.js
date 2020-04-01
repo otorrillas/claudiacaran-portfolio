@@ -10,7 +10,7 @@ function Gallery({ category, projects, onProjectClick }) {
   }
 
   const filteredProjects = category
-    ? projects.filter(project => project.categories.includes(category))
+    ? projects.filter((project) => project.categories.includes(category))
     : projects;
 
   return (
@@ -22,7 +22,7 @@ function Gallery({ category, projects, onProjectClick }) {
         exit="exit"
         variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
       >
-        {filteredProjects.map(project => (
+        {filteredProjects.map((project) => (
           // <motion.div transition={transition} variants={thumbnailVariants}>
           <GalleryProject
             key={project.id}
