@@ -8,9 +8,10 @@ function Gallery({ category, projects, onProjectClick }) {
     onProjectClick(id)
   }
 
-  const filteredProjects = category
-    ? projects.filter((project) => project.categories.includes(category))
-    : projects
+  const filteredProjects =
+    category !== 'all'
+      ? projects.filter((project) => project.categories.includes(category))
+      : projects
 
   return (
     <div className='Gallery'>

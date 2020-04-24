@@ -14,7 +14,6 @@ import CopyrightSection from '../components/sections/section-copyright'
 import useBackgroundColor from '../lib/useBackgroundColor'
 
 import './about.css'
-import { motion } from 'framer-motion'
 
 const backgroundColor = '#F4F1EF'
 
@@ -22,7 +21,7 @@ function About() {
   useBackgroundColor(backgroundColor)
 
   return (
-    <motion.div animate>
+    <>
       <Head>
         <title>{`Claudia Aran | About`}</title>
         <meta name='theme-color' content={backgroundColor} />
@@ -45,7 +44,7 @@ function About() {
           <Clients />
         </div>
       </div>
-    </motion.div>
+    </>
   )
 }
 

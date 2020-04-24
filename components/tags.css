@@ -1,0 +1,26 @@
+.Tag-underline {
+  width: 100%;
+  height: 1px;
+  border-radius: 1px;
+  background: #494949;
+  position: absolute;
+  bottom: 1px;
+}
+
+.Tags ol,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  user-select: none;
+}
+
+ol {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+li {
+  margin-left: 8px;
+}
