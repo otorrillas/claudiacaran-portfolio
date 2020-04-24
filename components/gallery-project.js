@@ -22,12 +22,18 @@ const GalleryCard = styled(motion.div)`
 
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 const thumbnailVariants = {
-  initial: { scale: 0.9, opacity: 0 },
-  enter: { scale: 1, opacity: 1, transition },
+  initial: { scale: 0.96, y: 30, opacity: 0 },
+  enter: {
+    scale: 1,
+    y: 0,
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.48, 0.15, 0.25, 0.96] },
+  },
   exit: {
-    scale: 0.5,
+    scale: 0.6,
+    y: 100,
     opacity: 0,
-    transition: { duration: 1.5, ...transition },
+    transition: { duration: 0.2, ease: [0.48, 0.15, 0.25, 0.96] },
   },
   hover: { scale: 0.97 },
 }
