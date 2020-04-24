@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import Section from "./section";
+import Section from './section'
 
 function Services() {
   return (
-    <Section title="Services.">
-      <div className="about-text-list">
+    <Section title='Services.'>
+      <div className='about-text-list'>
         <p>Art Direction</p>
         <p>Brand Identity</p>
         <p>Concept Development</p>
@@ -24,7 +24,7 @@ function Services() {
         <p>Website Design</p>
       </div>
     </Section>
-  );
+  )
 }
 
-export default Services;
+export default Services

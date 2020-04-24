@@ -1,11 +1,11 @@
-import { types } from "../../constants/project-types";
+import { types } from '../../constants/project-types'
 
 const data = {
-  title: "Typeform Layouts",
-  hero: "/Projects/Layouts/ClaudiaAran-typeform-layouts-web-thumbnail.jpg",
+  title: 'Typeform Layouts',
+  hero: '/Projects/Layouts/ClaudiaAran-typeform-layouts-web-thumbnail.jpg',
   styles: {
-    background: "#F5F0EA",
-    color: "#333333",
+    background: '#F5F0EA',
+    color: '#333333',
   },
   sections: [
     [
@@ -85,6 +85,6 @@ const data = {
       },
     ],
   ],
-};
+}
 
-export default data;
+export default data

@@ -8,8 +8,8 @@
     grid-auto-flow: row;
     grid-column-gap: 32px;
     grid-template-areas:
-      "portrait portrait portrait portrait . description description description description description description . "
-      "col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3";
+      'portrait portrait portrait portrait . description description description description description description . '
+      'col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3';
   }
   .portrait {
     grid-area: portrait;
@@ -44,8 +44,8 @@
     grid-auto-flow: row;
     grid-column-gap: 32px;
     grid-template-areas:
-      "portrait portrait portrait portrait . description description description description description description . "
-      "col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3";
+      'portrait portrait portrait portrait . description description description description description description . '
+      'col1 col1 col1 col1 .  col2 col2 col2 . col3 col3 col3';
   }
 }
 
@@ -112,7 +112,7 @@ h3 {
 
 .About h2 {
   grid-area: description;
-  font-family: "freight-text-pro", serif;
+  font-family: 'freight-text-pro', serif;
   font-style: normal;
   font-size: 21px;
   line-height: 32px;

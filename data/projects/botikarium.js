@@ -1,11 +1,11 @@
-import { types } from "../../constants/project-types";
+import { types } from '../../constants/project-types'
 
 const data = {
-  title: "Botikarium",
-  hero: "/Projects/Botikarium/ClaudiaAran-Botikarium-07.jpg",
+  title: 'Botikarium',
+  hero: '/Projects/Botikarium/ClaudiaAran-Botikarium-07.jpg',
   styles: {
-    background: "#AFB8B3",
-    color: "#333333",
+    background: '#AFB8B3',
+    color: '#333333',
   },
   sections: [
     [
@@ -38,13 +38,13 @@ const data = {
     [
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-06.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-06.jpg',
       },
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-05.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-05.jpg',
       },
     ],
     [
@@ -60,18 +60,18 @@ const data = {
     [
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-botikarium-web-01.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-botikarium-web-01.jpg',
       },
     ],
     [
       {
         type: types.image,
-        alt: "some text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-04.jpg",
+        alt: 'some text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-04.jpg',
       },
     ],
   ],
-};
+}
 
-export default data;
+export default data

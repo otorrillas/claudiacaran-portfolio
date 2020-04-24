@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import "./grid.css";
+import './grid.css'
 
 function Grid(props) {
-  return <div className="Grid">{props.children}</div>;
+  return <div className='Grid'>{props.children}</div>
 }
 
-export default Grid;
+export default Grid

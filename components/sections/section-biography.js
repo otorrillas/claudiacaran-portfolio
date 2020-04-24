@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
-import Section from "./section";
+import Section from './section'
 
 function Biography() {
   return (
-    <Section title="Short Biography.">
-      <p className="about-text">
+    <Section title='Short Biography.'>
+      <p className='about-text'>
         <p>Born 1994, Barcelona, where she is actually living and working.</p>
         <p>2010-12. Bachelor of fine arts at Massana School, Barcelona.</p>
         <p>Completed a jewelry workshop during the last year.</p>
@@ -46,7 +46,7 @@ function Biography() {
         </p>
       </p>
     </Section>
-  );
+  )
 }
 
-export default Biography;
+export default Biography

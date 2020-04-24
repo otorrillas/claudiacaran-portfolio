@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react'
 
 function Text({ children }) {
-  return <p>{children}</p>;
+  return <p>{children}</p>
 }
 
-export default Text;
+export default Text

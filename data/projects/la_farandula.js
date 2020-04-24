@@ -1,11 +1,11 @@
-import { types } from "../../constants/project-types";
+import { types } from '../../constants/project-types'
 
 const data = {
-  title: "La Farandula",
-  hero: "",
+  title: 'La Farandula',
+  hero: '',
   styles: {
-    background: "#F1F0EC",
-    color: "#181818",
+    background: '#F1F0EC',
+    color: '#181818',
   },
   sections: [
     [
@@ -27,16 +27,16 @@ const data = {
     [
       {
         type: types.image,
-        alt: "some text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-03.jpg",
+        alt: 'some text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-03.jpg',
       },
     ],
 
     [
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-04.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-04.jpg',
       },
     ],
 
@@ -53,16 +53,16 @@ const data = {
     [
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-06.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-06.jpg',
       },
       {
         type: types.image,
-        alt: "alt text",
-        src: "/Projects/Botikarium/ClaudiaAran-Botikarium-05.jpg",
+        alt: 'alt text',
+        src: '/Projects/Botikarium/ClaudiaAran-Botikarium-05.jpg',
       },
     ],
   ],
-};
+}
 
-export default data;
+export default data

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Copyright() {
   return (
@@ -12,7 +12,7 @@ function Copyright() {
         manipulated without her written permission.
       </p>
     </div>
-  );
+  )
 }
 
-export default Copyright;
+export default Copyright
