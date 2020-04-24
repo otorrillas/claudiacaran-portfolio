@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import { motion } from 'framer-motion'
 
 import Header from '../components/header'
 import Description from '../components/description'
@@ -27,7 +28,12 @@ function About() {
         <meta name='theme-color' content={backgroundColor} />
       </Head>
       <Header />
-      <div className='About'>
+      <motion.div
+        className='About'
+        initial='initial'
+        animate='enter'
+        exit='exit'
+      >
         <Portrait />
         <Description />
         <div className='col1'>
@@ -43,7 +49,7 @@ function About() {
           <Awards />
           <Clients />
         </div>
-      </div>
+      </motion.div>
     </>
   )
 }
