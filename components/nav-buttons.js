@@ -30,7 +30,7 @@ function NavButtons() {
   }
 
   function onHomeClick() {
-    Router.push(`/studio`)
+    Router.push(`/`)
   }
   return (
     <motion.div

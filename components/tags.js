@@ -1,8 +1,6 @@
 import { motion, AnimateSharedLayout } from 'framer-motion'
 import styled from 'styled-components'
 
-import categories from '../data/categories.json'
-
 import './tags.css'
 
 const charcoalColor = '#494949'
@@ -14,22 +12,20 @@ const Category = styled(motion.li)`
   font-size: ${(props) => props.active && '15px'};
 `
 
-const allCategories = [{ id: 'all', title: 'all' }, ...categories]
-
-const Tags = ({ onClick, selectedTag }) => {
+const Tags = ({ categories, onClick, selectedTag }) => {
   return (
     <AnimateSharedLayout>
       <ol className='Tags'>
-        {allCategories.map((category) => (
+        {categories.map(({ id, title }) => (
           <Category
             animate
-            key={category.id}
+            key={id}
             className='Tags-button'
-            onClick={() => onClick(category.id)}
-            active={category.id === selectedTag}
+            onClick={() => onClick(id)}
+            active={id === selectedTag}
           >
-            {category.title}
-            {category.id === selectedTag && (
+            {title}
+            {id === selectedTag && (
               <motion.div
                 layoutId='tag-underline'
                 className='Tag-underline'

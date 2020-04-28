@@ -39,14 +39,7 @@ const thumbnailVariants = {
 }
 
 function GalleryProject({ onClick, project }) {
-  const {
-    id,
-    title,
-    client,
-    year,
-    tags,
-    background: { thumbnail },
-  } = project
+  const { id, title, client, year, categories, thumbnail, styles } = project
 
   function handleClick() {
     onClick(id)
@@ -56,7 +49,7 @@ function GalleryProject({ onClick, project }) {
     <GalleryCard
       className='Gallery-Project'
       key={id}
-      hoverColor={project.background.hover}
+      hoverColor={styles.hover}
       whileHover='hover'
       onClick={handleClick}
       variants={thumbnailVariants}
@@ -68,7 +61,7 @@ function GalleryProject({ onClick, project }) {
         <p>
           {client}, {year}
         </p>
-        <p>{tags.join(', ')}</p>
+        <p>{categories.join(', ')}</p>
       </div>
     </GalleryCard>
   )

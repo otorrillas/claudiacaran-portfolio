@@ -6,12 +6,12 @@ function Header() {
   return (
     <div className='Header'>
       <h4>
-        <Link href='/studio'>
+        <Link href='/'>
           <a>Studio</a>
         </Link>
       </h4>
       <h4>
-        <Link href='/studio'>
+        <Link href='/'>
           <a>Claudia Aran</a>
         </Link>
       </h4>

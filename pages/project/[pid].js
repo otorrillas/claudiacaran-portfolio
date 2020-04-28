@@ -43,7 +43,7 @@ const ProjectHeader = ({ title, hero }) => (
   <div className='Project-Header'>
     <motion.div variants={textVariants}>
       <h4>
-        <Link href='/studio'>
+        <Link href='/'>
           <a>Claudia Aran</a>
         </Link>
       </h4>
