@@ -21,11 +21,11 @@ const Tags = ({ categories, onClick, selectedTag }) => {
             animate
             key={id}
             className='Tags-button'
-            onClick={() => onClick(id)}
-            active={id === selectedTag}
+            onClick={() => onClick(title)}
+            active={title === selectedTag}
           >
             {title}
-            {id === selectedTag && (
+            {title === selectedTag && (
               <motion.div
                 layoutId='tag-underline'
                 className='Tag-underline'
