@@ -13,10 +13,11 @@ import {
 import Gallery from '../components/gallery'
 import Header from '../components/header'
 import Tags from '../components/tags'
+import PreviewMode from '../components/preview-mode'
 
 import './studio.css'
 
-const Studio = ({ projects, categories }) => {
+const Studio = ({ projects, categories, preview }) => {
   const [selectedTag, setSelectedTag] = useState('all')
 
   function handleTagClick(id) {
@@ -51,6 +52,7 @@ const Studio = ({ projects, categories }) => {
           onProjectClick={handleProjectClick}
         />
       </motion.div>
+      {preview && <PreviewMode />}
     </>
   )
 }
@@ -58,15 +60,18 @@ const Studio = ({ projects, categories }) => {
 Studio.propTypes = {
   projects: PropTypes.arrayOf(ProjectListItemShape),
   categories: PropTypes.arrayOf(CategoryShape),
+  preview: PropTypes.bool,
 }
 
 Studio.defaultProps = {
   projects: [],
   categories: [],
+  preview: false,
 }
 
 export async function getStaticProps(context) {
-  const client = createClient(context.preview)
+  const preview = context.preview || false
+  const client = createClient({ preview })
 
   try {
     const { items } = await client.getEntries()
@@ -76,6 +81,7 @@ export async function getStaticProps(context) {
         props: {
           projects: getNormalizedProjectList(items),
           categories: getNormalizedCategories(items),
+          preview,
         },
       }
     }

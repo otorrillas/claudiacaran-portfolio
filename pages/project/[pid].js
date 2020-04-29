@@ -2,19 +2,20 @@ import { useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Head from 'next/head'
-import { createClient } from '../../lib/contentful'
-
 import { motion } from 'framer-motion'
 
-import ProjectSection from '../../components/project-types/project-section'
-import NavButtons from '../../components/nav-buttons'
-import useBackgroundColor from '../../lib/useBackgroundColor'
-
-import './project.css'
+import { createClient } from '../../lib/contentful'
 import {
   getNormalizedProject,
   PROJECT_CONTENT_TYPE,
 } from '../../lib/normalize-data'
+import useBackgroundColor from '../../lib/useBackgroundColor'
+
+import ProjectSection from '../../components/project-types/project-section'
+import NavButtons from '../../components/nav-buttons'
+import PreviewMode from '../../components/preview-mode'
+
+import './project.css'
 
 const ProjectWrapper = styled.div`
   color: ${(props) => props.color};
@@ -54,7 +55,6 @@ const ProjectHeader = ({ title, hero }) => (
     </motion.div>
 
     <motion.img
-      // animate
       src={hero}
       alt='Hero'
       className='Hero'
@@ -63,7 +63,7 @@ const ProjectHeader = ({ title, hero }) => (
   </div>
 )
 
-const Project = ({ hero, title, styles, sections }) => {
+const Project = ({ hero, title, styles, sections, preview }) => {
   useBackgroundColor(styles.background)
 
   useEffect(() => {
@@ -83,19 +83,21 @@ const Project = ({ hero, title, styles, sections }) => {
 
           <div className='Project-gallery'>
             {sections.map((section) => (
-              <ProjectSection section={section} />
+              <ProjectSection section={section} key={section.id} />
             ))}
           </div>
         </motion.div>
       </ProjectWrapper>
+      {preview && <PreviewMode />}
     </>
   )
 }
 
 export async function getStaticProps(context) {
   const { pid } = context.params
+  const preview = context.preview || false
 
-  const client = createClient(context.preview)
+  const client = createClient({ preview })
 
   try {
     const { items } = await client.getEntries({
@@ -107,7 +109,10 @@ export async function getStaticProps(context) {
       const normalizedProject = getNormalizedProject(project)
 
       return {
-        props: normalizedProject,
+        props: {
+          ...normalizedProject,
+          preview,
+        },
       }
     }
   } catch (err) {
@@ -116,8 +121,8 @@ export async function getStaticProps(context) {
   }
 }
 
-export async function getStaticPaths(context = {}) {
-  const client = createClient(context.preview)
+export async function getStaticPaths() {
+  const client = createClient()
 
   const { items } = await client.getEntries({
     content_type: PROJECT_CONTENT_TYPE,
