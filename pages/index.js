@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Head from 'next/head'
 import Router from 'next/router'
 import { motion } from 'framer-motion'
-import { createClient } from 'contentful'
+import { createClient } from '../lib/contentful'
 
 import { ProjectListItemShape, CategoryShape } from '../lib/prop-types'
 import {
@@ -66,10 +66,7 @@ Studio.defaultProps = {
 }
 
 export async function getStaticProps(context) {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_API_KEY,
-  })
+  const client = createClient(context.preview)
 
   try {
     const { items } = await client.getEntries()

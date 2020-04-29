@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Head from 'next/head'
-import { createClient } from 'contentful'
+import { createClient } from '../../lib/contentful'
 
 import { motion } from 'framer-motion'
 
@@ -95,10 +95,7 @@ const Project = ({ hero, title, styles, sections }) => {
 export async function getStaticProps(context) {
   const { pid } = context.params
 
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_API_KEY,
-  })
+  const client = createClient(context.preview)
 
   try {
     const { items } = await client.getEntries({
@@ -119,11 +116,8 @@ export async function getStaticProps(context) {
   }
 }
 
-export async function getStaticPaths() {
-  const client = createClient({
-    space: process.env.CONTENTFUL_SPACE_ID,
-    accessToken: process.env.CONTENTFUL_API_KEY,
-  })
+export async function getStaticPaths(context) {
+  const client = createClient(context.preview)
 
   const { items } = await client.getEntries({
     content_type: PROJECT_CONTENT_TYPE,
