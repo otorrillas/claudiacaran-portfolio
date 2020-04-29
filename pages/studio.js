@@ -32,7 +32,6 @@ function Studio() {
         initial='initial'
         animate='enter'
         exit='exit'
-        variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
       >
         <Tags onClick={handleTagClick} selectedTag={selectedTag} />
 
