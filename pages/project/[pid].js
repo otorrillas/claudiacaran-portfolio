@@ -2,16 +2,19 @@ import { useEffect } from 'react'
 import styled from 'styled-components'
 import Link from 'next/link'
 import Head from 'next/head'
+import { createClient } from 'contentful'
 
 import { motion } from 'framer-motion'
 
-import data from '../../data/projects'
-
-import ProjectRow from '../../components/project-types/project-row'
+import ProjectSection from '../../components/project-types/project-section'
 import NavButtons from '../../components/nav-buttons'
 import useBackgroundColor from '../../lib/useBackgroundColor'
 
 import './project.css'
+import {
+  getNormalizedProject,
+  PROJECT_CONTENT_TYPE,
+} from '../../lib/normalize-data'
 
 const ProjectWrapper = styled.div`
   color: ${(props) => props.color};
@@ -43,7 +46,7 @@ const ProjectHeader = ({ title, hero }) => (
   <div className='Project-Header'>
     <motion.div variants={textVariants}>
       <h4>
-        <Link href='/studio'>
+        <Link href='/'>
           <a>Claudia Aran</a>
         </Link>
       </h4>
@@ -60,13 +63,12 @@ const ProjectHeader = ({ title, hero }) => (
   </div>
 )
 
-const Project = ({ pid }) => {
-  const { hero, title, styles, sections } = findProject(pid)
+const Project = ({ hero, title, styles, sections }) => {
+  useBackgroundColor(styles.background)
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-
-  useBackgroundColor(styles.background)
 
   return (
     <>
@@ -80,29 +82,9 @@ const Project = ({ pid }) => {
           <NavButtons />
 
           <div className='Project-gallery'>
-            {sections.map((row) => {
-              switch (row.length) {
-                case 1:
-                  return (
-                    <div className='full-width'>
-                      <ProjectRow element={row[0]} />
-                    </div>
-                  )
-                case 2:
-                  return (
-                    <>
-                      <div className='two-col-1'>
-                        <ProjectRow element={row[0]} />
-                      </div>
-                      <div className='two-col-2'>
-                        <ProjectRow element={row[1]} />
-                      </div>
-                    </>
-                  )
-                default:
-                  return null
-              }
-            })}
+            {sections.map((section) => (
+              <ProjectSection section={section} />
+            ))}
           </div>
         </motion.div>
       </ProjectWrapper>
@@ -110,19 +92,47 @@ const Project = ({ pid }) => {
   )
 }
 
-function findProject(id) {
-  return data[id]
-}
-
 export async function getStaticProps(context) {
   const { pid } = context.params
-  return {
-    props: { pid },
+
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_API_KEY,
+  })
+
+  try {
+    const { items } = await client.getEntries({
+      content_type: PROJECT_CONTENT_TYPE,
+    })
+
+    if (items) {
+      const project = items.find((item) => item.fields.id === pid)
+      const normalizedProject = getNormalizedProject(project)
+
+      return {
+        props: normalizedProject,
+      }
+    }
+  } catch (err) {
+    console.error(err)
+    return {}
   }
 }
 
 export async function getStaticPaths() {
-  const paths = Object.keys(data).map((pid) => ({ params: { pid } }))
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_API_KEY,
+  })
+
+  const { items } = await client.getEntries({
+    content_type: PROJECT_CONTENT_TYPE,
+  })
+
+  const paths = items.map((item) => {
+    const pid = item.fields.id
+    return { params: { pid } }
+  })
 
   return {
     paths,

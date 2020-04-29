@@ -10,7 +10,7 @@ const data = {
   sections: [
     [
       {
-        type: types.text,
+        type: types.html,
         text: `
         <p><b>Client</b>: Botikarium</p>
         <p><b>Services</b>: Art Direction, Brand Identity, Logo Design, Packaging, Social Media, Web Design.</p>
