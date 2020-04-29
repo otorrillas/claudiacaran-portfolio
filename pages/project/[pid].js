@@ -116,7 +116,7 @@ export async function getStaticProps(context) {
   }
 }
 
-export async function getStaticPaths(context) {
+export async function getStaticPaths(context = {}) {
   const client = createClient(context.preview)
 
   const { items } = await client.getEntries({
