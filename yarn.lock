@@ -3033,10 +3033,10 @@ fragment-cache@^0.2.1:
   dependencies:
     map-cache "^0.2.2"
 
-framer-motion@^2.0.0-beta.68:
-  version "2.0.0-beta.68"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.0.0-beta.68.tgz#f3252638675e9b0af9b0c8f7a667619a765ead78"
-  integrity sha512-IYh4WwnyyDe7rXI9s3miDkPnWhc/tbJ3N8xycdFX6efNX8d1BtYMs9tT4jy8F7N87ebibUS9Pr/SfVG4J0Al5w==
+framer-motion@^2.0.0-beta.70:
+  version "2.0.0-beta.70"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-2.0.0-beta.70.tgz#a6a3147de9b50a50438b0ef6f4720c5086fedcde"
+  integrity sha512-SqzHMZUuEhkx92uYgAurkGLi57Y3u6Rp5WevDyGZesfmMRxC3iwZOH9MAgAuLaLQ8aF6CIrWfGrvvkrpybLTqw==
   dependencies:
     "@popmotion/easing" "^1.0.2"
     "@popmotion/popcorn" "^0.4.2"
