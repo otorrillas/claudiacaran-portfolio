@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "@madebyconnor/rich-text-to-jsx": "^2.1.3",
-    "contentful": "^7.14.7",
+    "contentful": "^7.14.8",
     "framer-motion": "^2.9.1",
     "next": "9.3.6",
     "prop-types": "^15.7.2",
