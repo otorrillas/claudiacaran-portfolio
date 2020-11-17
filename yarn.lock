@@ -2833,10 +2833,10 @@ contentful-sdk-core@^6.4.5:
     lodash "^4.17.10"
     qs "^6.5.2"
 
-contentful@^7.14.12:
-  version "7.14.12"
-  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.14.12.tgz#9ea1b307a5a2e76690af8312e16a126d36ef6737"
-  integrity sha512-xbym1S0TcF2onq4AQJNfYt9B05uHQkqr0GGVoNVyQIN4zBt/D7CLFSeoKMQPvPS49nsA0jAtbFX2B95SU6Jlrw==
+contentful@^7.14.13:
+  version "7.14.13"
+  resolved "https://registry.yarnpkg.com/contentful/-/contentful-7.14.13.tgz#07d301fabc9f30d2a1297030d4de3f29ad239133"
+  integrity sha512-jzvTrPztxSVE3Vzi6wVu/ovkeV0Sfbs44K89rDJVoMSQei5mR7c3sPl/zkFw8tGYZwcDtBRM5z3GuPaA/jN4/g==
   dependencies:
     axios "^0.20.0"
     contentful-resolve-response "^1.2.2"
@@ -4400,12 +4400,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
-lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15:
-  version "4.17.19"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
-  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
-
-lodash@^4.17.19:
+lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.13, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
